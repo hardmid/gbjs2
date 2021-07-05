@@ -46,8 +46,6 @@ class GoodList {
         this._$goodsListContainer = document.querySelector('.goods-list');
     }
 
-
-
     renderGoodsList() {
         let goodsList = this._goods.map(
                 item => item.render()
@@ -72,6 +70,5 @@ const list = new GoodList([
     new Good('Fish', 'red', 98),
 ])
 
-// list.getPrice(0);
 list.renderGoodsList();
 list.refreshBasket();
