@@ -3,11 +3,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Корзина</title>
+    <!-- подключаем B4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-<script>
+    <div class='container mt-3 border'>
+      <header class='col-md-12 m-1 mx-auto border'>
+      <!-- меню шапка -->
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Главная страница</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Каталог</a>
+            </li>
+            <li class="nav-item">
+                <!-- кнопка корзины -->
+                <button class="btn btn-secondary cart-button" type="button">Корзина</button>
+            </li>
+          </ul>
 
-</script>
+      </header>
+      <main class="row col-md-12 m-1 mx-auto border">
+        <!-- корзина - отбиваем по центру, оставляя место под каталог и рекламу -->
+        <div class="catalog col-md-3 border">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus tenetur eum voluptatem, ab sequi non debitis a praesentium pariatur repellendus delectus similique distinctio enim? Recusandae tempora vel perspiciatis ipsum quod.
+        </div>
+        <div class="col-md-6 mx-auto border goods-list"></div>
+        <!-- контент -->
+        <div class="content col-md-3 border">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas molestias veritatis quam incidunt totam consequuntur, ipsum neque ut ducimus, in officiis? Unde, quas.</div>
+      </main>
+    </div>
+      <script src="script.js"></script>
 </body>
 </html>
